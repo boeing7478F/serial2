@@ -12,8 +12,15 @@ basic.forever(function () {
     input.acceleration(Dimension.Strength),
     input.compassHeading()
     ])
+    serial.writeLine("")
+    list = [
+    input.temperature(),
+    input.lightLevel(),
+    input.acceleration(Dimension.Strength),
+    input.compassHeading()
+    ]
     for (let index = 0; index <= list[index]; index++) {
         basic.showNumber(list[index])
-        basic.showString("Hello!")
+        basic.showString(",")
     }
 })
